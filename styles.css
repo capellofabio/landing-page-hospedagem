@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0a0a23;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+
+header {
+    background-image: url(header-background3.png);
+    height: 25vh;
+    /* Cover pois a imagem de fundo não é grande o suficiente pro viewport */
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    height: 150px;
+    max-height: 10vh;
+    width: auto;
+    margin-right: 100px;
+}
+
+nav {
+    /* Flex para posicionar o ol no meio do header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Height 100% para ocupar todo o container, senão o height padrão se torna o tamanho do content e não tem como posicionar corretamente*/
+    height: 100%;
+}
+
+/* Estilização da barra de navegação */
+ol {
+    background: linear-gradient(
+        to right,
+        #0d1158,
+        #1c0d5b 50%,
+        #420d79 75%,
+        #420d79 100%
+    );
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    padding: 10px;
+}
+
+ul a {
+    /* Muda de inline para inline-block já que inline não aceita transform */
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.cta-header-btn {
+    background-color: #adef49;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.cta-header-btn a {
+    color: #18370f;
+    font-weight: bold;
+}
+
+/* Adicionar animação pra aumentar tamanho dos botões no hover */
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-wrapper {
+    width: 20vw;
+    max-width: 450px;
+    height: 40vh;
+    max-height: 400px;
+    /* border: 5px solid black; */
+    box-shadow: 0 0 30px #171779;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #161b2e;
+}
+
+.pro {
+    transform: scale(1.1);
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+.cta-btn {
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+
+/* Corrige a margem irregular da esquerda dos cards e altera o bullet point pra um checkmark */
+.benefits {
+    list-style: none;
+    width: 100%;
+}
+.benefits li::before {
+    content: "✓";
+}
+
+.select-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #adef49;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    margin-top: auto;
+}
+
+.select-btn:visited {
+    color: black;
+}
+
+.pro .select-btn {
+    box-shadow: 0 0 15px gold;
+}
