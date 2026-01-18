@@ -33,7 +33,7 @@ nav {
 }
 
 /* Estilização da barra de navegação */
-ol {
+nav ul {
     background: linear-gradient(
         to right,
         #0d1158,
@@ -45,11 +45,12 @@ ol {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
     width: 90vw;
     padding: 10px;
 }
 
-ul a {
+li a {
     /* Muda de inline para inline-block já que inline não aceita transform */
     display: inline-block;
     text-decoration: none;
