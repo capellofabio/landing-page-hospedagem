@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: url(header-background.png);
+    background-image: url(./imagens/header-background.png);
     height: 25vh;
     /* Cover pois a imagem de fundo não é grande o suficiente pro viewport */
     background-size: cover;
